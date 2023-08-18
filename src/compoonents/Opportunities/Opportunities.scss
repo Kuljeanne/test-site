@@ -1,0 +1,64 @@
+@import '../../assets/colors.scss';
+
+.opportunities {
+  padding: 19.5rem;
+
+  .opp-container {
+    background: $opp-background;
+    border-radius: 20px;
+    padding: 13rem 31.5rem;
+    position: relative;
+    z-index: 1;
+
+    .opp-ball {
+      position: absolute;
+
+      &:first-of-type {
+        left: 15%;
+      }
+
+      &:nth-of-type(2) {
+        bottom: 93%;
+        right: 10%;
+      }
+
+      &:last-of-type {
+        bottom: 10%;
+        right: 13%;
+        filter: blur(12px);
+      }
+    }
+
+    .opp-shadow {
+      width: 440.008px;
+      height: 440.008px;
+      transform: rotate(11.969deg);
+
+      &:first-of-type {
+        top: 0;
+        right: 0;
+      }
+
+      &:last-of-type {
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+
+  &__title {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 6.5rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+  }
+}

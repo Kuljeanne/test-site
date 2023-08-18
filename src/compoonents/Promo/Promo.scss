@@ -1,0 +1,82 @@
+@import '../../assets/colors.scss';
+
+.promo {
+  background-color: $primary;
+
+  .promo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 120px;
+    padding-bottom: 195px;
+
+    @media screen and (max-width: 1300px) {
+      justify-content: center;
+      gap: 16px;
+    }
+  }
+
+  &__info {
+    position: relative;
+
+    @media screen and (max-width: 1300px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+
+  &__ball {
+    position: absolute;
+    bottom: 90%;
+    right: 20%;
+
+    @media screen and (max-width: 1300px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: 7.2rem;
+    font-weight: 400;
+    line-height: 105%;
+    letter-spacing: -2.16px;
+    max-width: 71rem;
+    margin-bottom: 3.5rem;
+
+    @media screen and (max-width: 1300px) {
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    max-width: 50rem;
+    margin-bottom: 6.7rem;
+    color: #CECECE;
+    font-size: 2.3rem;
+    line-height: 120%;
+
+    @media screen and (max-width: 1300px) {
+      text-align: center;
+    }
+  }
+
+  .img-shadow {
+    width: 528px;
+    height: 528px;
+    top: 0;
+  }
+
+  .img-container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__img {
+    max-width: 570px;
+
+  }
+}
