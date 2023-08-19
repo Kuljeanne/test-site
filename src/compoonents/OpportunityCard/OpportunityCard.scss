@@ -1,0 +1,53 @@
+@import '../../assets/colors.scss';
+
+.card-shadow {
+  border-radius: 2rem;
+  background-color: rgba(51, 62, 81, 0.60);
+  position: absolute;
+  top: 8%;
+  height: 100%;
+  width: 80%;
+  z-index: -1;
+
+}
+
+.opp-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 2.3rem;
+  padding: 45px 19px 50px;
+  border-radius: 20px;
+  background: $card;
+  max-width: 300px;
+  min-width: 260px;
+
+  &__img {
+    width: 117px;
+    height: 117px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__img-shadow {
+    margin: auto;
+    position: relative;
+    top: 8%;
+    left: 0;
+    z-index: -1;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 15px #f3e125;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 1.9rem;
+    line-height: 25px;
+    letter-spacing: -0.7px;
+  }
+
+}

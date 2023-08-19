@@ -1,0 +1,25 @@
+@import '../../assets/colors.scss';
+
+.header {
+  background-color: $primary;
+
+  .shadow-container {
+    position: relative;
+    z-index: 9999;
+  }
+
+  &__shadow {
+    width: 414.902px;
+    height: 414.902px;
+    transform: rotate(11.969deg);
+    left: -250%;
+    bottom: -400%;
+  }
+}
+
+.header-wrapper {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
