@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../../UI-kit/Button";
 import Ellipse from "../../assets/icons/ellipse";
 import "./Promo.scss";
+import Modal from "../Modal/Modal";
 
 const Promo = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!modalOpen)
+  }
   return (
     <section className="promo">
       <div className="promo-container wrapper">
@@ -19,6 +25,7 @@ const Promo = () => {
             className="promo__btn"
             type="primary"
             text="Начать зарабатывать на NFT"
+            onClick={toggleModal}
           />
         </div>
         <div className="img-container">
@@ -26,6 +33,7 @@ const Promo = () => {
           <img className="promo__img" src="img/MAN.png" alt="man" />
         </div>
       </div>
+      {modalOpen && <Modal toggleModal={toggleModal}/>}
     </section>
   );
 };
